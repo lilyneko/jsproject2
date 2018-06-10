@@ -10,21 +10,51 @@
 	<!-- header -->
 	
 	<main class="wrapper">
-		<h1>Invoices</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi accusantium, similique quia. Quas praesentium dicta eos ullam possimus exercitationem cumque quasi consequuntur eveniet, a.</p>
-		<form action="">
-			
-			
-			<label for="item-name" id="item-name">Product Name</label>
-			<input type="text" id="item-name" value="item-name" name="item-name">
+		<h1>Invoice</h1>
 
-			<label for="quatity" id="quantity">Quantity</label>
-			<input type="text" id="quantity" value="quantity" name="quantity">
-
-			<label for="price" id="price">Price</label>
-			<input type="text" id="price" value="price" name="price">
+		<form action="">			
+			<div class="line-item">
+				<label for="item-name" id="item-name">Item</label>
+				<input type="text" id="item-name" value="item-name" placeholder="Product Title">
+			</div>
 			
+			<div class="line-item">
+				<label for="quatity" id="quantity">Quantity</label>
+				<input type="text" id="quantity" value="quantity" name="quantity">
+			</div>
+			<div class="line-item">
+				<label for="price" id="price">Price</label>
+				<input type="text" id="price" value="price" name="price">
+			</div>			
 			<input type="submit" value="Add Item">
+
+		</form>	
+
+		<ul>
+
+		</ul>
+
+		<div class="sub-total">
+			Subtotal: 
+		</div>
+		<div class="tax">
+			Tax:
+		</div>
+		<div class="total">
+			Total:
+		</div>
+
+		<form action="">			
+			<div class="line-item">
+				<label for="customer-name" id="customer-name">Customer Name</label>
+				<input type="text" id="customer-name" value="customer-name" name="customer-name">
+			</div>
+			
+			<div class="line-item">
+				<label for="address" id="quantity">Quantity</label>
+				<input type="text" id="address" value="address" name="address">
+			</div>	
+			<input type="submit" value="Save Order">
 
 		</form>	
 	</main>
@@ -32,6 +62,7 @@
 
 	<!-- footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

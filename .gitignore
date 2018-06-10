@@ -1,3 +1,8 @@
 .DS_Store
 *.txt
 *.jpg
+package-lock.json
+gulpfile.json
+node_modules
+dev
+.profile
